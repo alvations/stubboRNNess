@@ -21,8 +21,9 @@ random.seed(0)
 
 textfile, labelfile, embedding_size, gru_size, num_epochs = sys.argv[1:]
 
-textfile = 'cwi_inputs.txt'
-labelfile = 'cwi_labels.txt'
+#textfile = 'cwi_inputs.txt'
+#labelfile = 'cwi_labels.txt'
+
 train_text, train_labels = [], []
 
 with io.open(textfile, 'r', encoding='utf8') as txtfin, \
@@ -42,5 +43,5 @@ model = RNN(layers=layers, cost='BinaryCrossEntropy')
 model.fit(train_tokens, train_labels, n_epochs=int(num_epochs))
 modelfile_name = 'stubborn_model.gridsearch.embedding{}.gru{}.epoch{}'.format(embedding_size, gru_size, num_epochs)
 save(model, modelfile_name+ '.pkl')
-
+pickle.dump(tokenizer, open(textfile + '-tokenizer.pkl', 'wb'))
 
