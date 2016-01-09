@@ -22,5 +22,5 @@ Cite
 ====
 
 ```
-
+Liling Tan and Nat Gillin. 2016. Complex Word Identification with Recurrent Neural Net Ensembles. In SemEval-2016.
 ```
