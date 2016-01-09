@@ -17,3 +17,10 @@ ls cwi_inputs.txt-tokenizer.pkl
 # Predict from the test data.
 python stubborn_test.py cwi_test.txt stubborn_model.gridsearch.embedding10.gru10.epoch10.pkl cwi_inputs.txt-tokenizer.pkl 
 ```
+
+Cite
+====
+
+```
+
+```
