@@ -51,7 +51,7 @@ for embedding_size, gru_size, num_epochs in product(embedding_sizes, gru_sizes, 
     model = RNN(layers=layers, cost='BinaryCrossEntropy')
     model.fit(train_tokens, train_labels, n_epochs=int(num_epochs))
 
-    modelfile_name = 'stubborn_model.embedding{}.gru{}.epoch{}'.format(embedding_size, gru_size, num_epochs)
+    modelfile_name = 'stubborn_model.paramsearch.embedding{}.gru{}.epoch{}'.format(embedding_size, gru_size, num_epochs)
 
     save(model, modelfile_name+ '.pkl')
     pickle.dump(tokenizer, open(modelfile_name + '-tokenizer.pkl', 'wb'))
