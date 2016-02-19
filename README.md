@@ -26,7 +26,7 @@ python stubborn_test.py cwi_test.txt stubborn_model.gridsearch.embedding10.gru10
 Cite
 ====
 
-Liling Tan and Nat Gillin. 2016. Complex Word Identification with Recurrent Neural Net Ensembles. In SemEval-2016. (forthcoming)
+Nat Gillin. 2016. Neural Nonsense Mangled in Ensemble Mess. In SemEval-2016. (forthcoming)
 
 ```
 
